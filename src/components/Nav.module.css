@@ -1,0 +1,21 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.logo a {
+  font-size: 3rem;
+  margin-left: 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+.git_link {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  margin-right: 2rem;
+}

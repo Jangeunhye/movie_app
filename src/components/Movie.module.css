@@ -1,0 +1,44 @@
+.movie_box {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 2rem;
+  border-radius: 30px;
+}
+.movie_box a {
+  text-align: center;
+}
+
+.movie_image {
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgb(46, 44, 44);
+}
+
+.movie_title {
+  color: black;
+  margin: 0;
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.genres {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.genre {
+  color: black;
+  background: transparent;
+  padding: 0.6rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+}

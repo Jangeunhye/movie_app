@@ -2,3 +2,7 @@
   font-family: "Courier New", Courier, monospace;
   font-size: 18x;
 }
+.app_container {
+  width: 100%;
+  height: 100%;
+}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import styles from "./Details.module.css";
 
 function Details() {
   const { id } = useParams();
@@ -15,18 +16,27 @@ function Details() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       {loading ? (
-        "Loading..."
+        <h1 className={styles.loading}>Loading...</h1>
       ) : (
-        <div>
-          <img src={details.large_cover_image} />
-          <h1>{details.title}</h1>
-          <ul>
+        <div className={styles.detail_container}>
+          <img className={styles.coverImg} src={details.medium_cover_image} />
+          <h1 className={styles.title}>{details.title}</h1>
+          <div className={styles.genre_list}>
             {details.genres.map((genre) => (
-              <li>{genre}</li>
+              <span>{genre}</span>
             ))}
-          </ul>
+          </div>
+          <p>
+            {" "}
+            {details.description_intro.length > 400
+              ? `${details.description_intro.slice(0, 400)}...`
+              : details.description_intro}
+          </p>
+          <a className={styles.more_information} href={details.url}>
+            More Information
+          </a>
         </div>
       )}
     </div>
